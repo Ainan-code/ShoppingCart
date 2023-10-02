@@ -1,10 +1,13 @@
-import ProductCard from "./ProductCard";
+import Navbar from "./Navbar";
 import ApiFetch from "../Api";
 
 
+
 function Shop() {
+  
     return (
         <div>
+          <Navbar/>
       <ApiFetch/>   
         </div>
     )

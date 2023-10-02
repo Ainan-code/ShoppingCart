@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 function Navbar() {
     return (
 
@@ -11,10 +14,11 @@ function Navbar() {
                 <span className="line line3"></span>
             </div>
             <ul className="menu-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
+                <Link to="/"><a href="#">Home</a></Link>
+                <Link to="/shop"><a href="#">Products</a></Link>
                 <li><a href="#">About</a></li>
-               
+
+             
                 <li><a href="#">Cart </a></li>
             </ul>
             <h1 className="logo">HoopShop</h1>

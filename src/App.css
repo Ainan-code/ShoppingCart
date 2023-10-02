@@ -7,7 +7,6 @@
 }
 
 
-
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines{
     display: none;
@@ -200,4 +199,27 @@
   justify-content: center;
   align-items: center;
 
+}
+
+
+
+
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+	background-color: #fff;
+	border: 1px solid grey;
+	border-radius: 5px;
+	box-shadow: 0px 10px 15px 0 rgba(0,0,0,0.3);
+}
+
+.product-img {
+    margin: 0;
+}
+
+.product-img img {
+    max-width: 100%;
+    border-radius: 3px 3px 0 0;
 }
