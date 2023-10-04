@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+/*import { useEffect, useState } from "react";
 import ProductCard from "./Components/ProductCard";
 function ApiFetch() {
     const [data, setData] = useState([]);
@@ -21,4 +21,4 @@ useEffect(() => {
 }
 
       
-  export default ApiFetch;
+  export default ApiFetch;*/

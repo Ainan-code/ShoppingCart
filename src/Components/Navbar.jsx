@@ -14,8 +14,8 @@ function Navbar() {
                 <span className="line line3"></span>
             </div>
             <ul className="menu-items">
-                <Link to="/"><a href="#">Home</a></Link>
-                <Link to="/shop"><a href="#">Products</a></Link>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/shop">Shop</Link></li>
                 <li><a href="#">About</a></li>
 
              

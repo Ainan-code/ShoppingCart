@@ -1,4 +1,5 @@
-function ProductCard({img,price, }) {
+
+function ProductCard({img,price, addtocart }) {
     return (
 
       <section className="cards">
@@ -9,7 +10,7 @@ function ProductCard({img,price, }) {
            <img src={img} alt="fvf" />
          </div>
          <div className="details">
-           <button> Add to cart </button>
+           <button onClick={addtocart} > Add to cart </button>
            <span> {price}</span>
          </div>
 
