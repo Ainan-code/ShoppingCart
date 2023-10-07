@@ -2,7 +2,6 @@ import Navbar from "./Navbar";
 
 import { useState, useEffect } from "react";
 
-import ProductCard from "./ProductCard";
 
 
 
@@ -16,16 +15,15 @@ function Shop() {
     .then(response=> response.json())
     .then(result=> setData(result));
 
+  
+
 }, []);
 
 
 
-   const addTocart = (item)  => {
+  function addTocart (item)   {
 
-   
-
-    const cartCopy = [...cart, {item}];
-    setCart(cartCopy);
+  setCart([...cart, {item}])
   };
 
     
@@ -33,29 +31,12 @@ function Shop() {
 
 
 
-   useEffect(() => {
-    console.log(cart); // Access the updated value here
-  }, [cart]); 
 
 
 
  
 
 
-  /* const dataItems = data.map((item) => {
-
-    
-    <div className="card-item" key={item.id}>
-         
-    <div className="item-img">
-      <img src={item.image} alt="fvf" />
-    </div>
-    <div className="details">
-      <button onClick={addTocart(item)}> Add to cart </button>
-      <span> {item.price}</span>
-    </div>
-    </div>
-   } ) */
 
     return (
         <div>
@@ -63,12 +44,28 @@ function Shop() {
             <Navbar/>  
             </div>
 
+            <div>Cart;{cart.length} </div>
             
-            <div>{
-            data && data.map(item =>  <ProductCard img={item.image} key={item.id} price={item.price} addTocart={() => addTocart({item}) }/>
+            <section className="cards">{
+            data && data.map(item =>   
+           
+
+            <div className="productCard" key={item.id}>
+             
+             <div className="product-img">
+               <img src={item.image} alt="fvf" />
+             </div>
+             <div className="details">
+               <button onClick= {()  => addTocart(item)}> Add to cart </button>
+               <span> {item.price}</span>
+             </div>
+    
+           </div>
+    
+         
             )
             }
-            </div>
+            </section>
           
         </div>
 
