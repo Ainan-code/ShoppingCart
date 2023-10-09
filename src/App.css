@@ -50,14 +50,14 @@
     font-size: 1.3rem;
 }
 
-.navbar a{
+.navbar Link {
     color: #444;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
 }
 
-.navbar a:hover{
+.navbar Link:hover{
     color: #117964;
 }
 

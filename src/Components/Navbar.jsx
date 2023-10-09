@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 
-function Navbar() {
+function Navbar({cart}) {
     return (
 
 
@@ -19,7 +19,10 @@ function Navbar() {
                 <li><a href="#">About</a></li>
 
              
-                <li><a href="#">Cart </a></li>
+                <li><Link to="/cart"> 
+                <img src="./src/assets/icons8-cart-90.png" alt="cart icon" />
+                 <span> {cart} </span> 
+         </Link></li>
             </ul>
             <h1 className="logo">HoopShop</h1>
         </div>

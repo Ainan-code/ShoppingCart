@@ -41,10 +41,10 @@ function Shop() {
     return (
         <div>
             <div>
-            <Navbar/>  
+            <Navbar cart={cart.length} />  
             </div>
 
-            <div>Cart;{cart.length} </div>
+           
             
             <section className="cards">{
             data && data.map(item =>   
