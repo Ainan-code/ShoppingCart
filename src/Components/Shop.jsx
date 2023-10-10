@@ -20,10 +20,14 @@ function Shop() {
 }, []);
 
 
+useEffect(() => {
+  localStorage.setItem('cart', JSON.stringify(cart));
+}, [cart]);
+
 
   function addTocart (item)   {
 
-  setCart([...cart, {item}])
+  setCart([...cart, item])
   };
 
     
@@ -31,7 +35,7 @@ function Shop() {
 
 
 
-
+ 
 
 
  
