@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 
 
 
+
 function Shop() {
     const [data, setData] = useState([]);
     const [cart, setCart] = useState([]);
